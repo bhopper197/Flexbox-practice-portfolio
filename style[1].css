@@ -1,0 +1,187 @@
+
+/* 
+	STYLE.CSS:
+	One stylesheet to rule them all.
+	
+	selector { property:value }
+	
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200&display=swap');
+
+/* -------  Structure ------- */
+
+body {
+    /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+	background-image:url(images/background/landscape.jpg);
+  margin: 0;
+}
+
+header {
+	height: 20px;
+	background-image: #001127;
+}
+
+footer {
+	height: 84px;
+	background-color: #06192b;
+}
+
+.wrapper {
+	width: 580px;
+	margin: auto;	
+}
+
+
+
+
+/* -------  Logo ------- */
+
+header h1 {
+	font-family: 'Muli', serif;
+	color: #f0eee9;
+	margin: 0px;
+	padding-top: 24px;
+	font-size: 48px;
+	text-align:center;
+}
+
+header h2 {
+	font-family: 'Playfair Display', serif;
+	color: #e3e1dc;
+	margin: 0px;
+	padding-top: 16px;
+	font-size: 22px;
+	text-align: center;
+}
+
+/* -------  Type ------- */
+
+h1, h2 {
+	color: #ffffff;
+	font-family: 'Muli', serif;
+}
+
+h1 { font-size: 25px;}
+h2 { font-size: 25px;}
+
+p, li {
+	font-family: 'Noto Sans', sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+    line-height: 26px;
+}
+
+a {
+	font-weight: 700;
+	text-decoration: none;	
+}
+
+a:link { color: #37587e; }
+a:visited { color: #fdfdfd; }
+a:hover { color: #254c66; }
+a:active { color: #093c50; }
+
+img:hover {
+  filter: alpha(opacity=90);
+  opacity: .9;
+	text-decoration: underline;	
+}
+
+.headshot-img{
+  
+}
+
+a:hover {
+  filter: alpha(opacity=90);
+  opacity: .9;
+	text-decoration: transparent;	
+}
+
+footer p {
+	color: #fff;
+	text-align: center;
+}
+footer a:link { color: #698378; }
+footer a:visited { color: #698378; }
+footer a:hover { color: #a4cdbc; }
+footer a:active { color: #a4cdbc; }
+
+
+/* -------  Elements ------- */
+
+img, iframe { border-radius: 8px;} 
+
+iframe { border: 1px solid #06192b;}
+
+hr { border: .5px solid #06192b;}
+
+
+
+/* -------  Spacers ------- */  
+/* Note: There are better ways of creating space
+   in a web page, but this is an easy technique
+   for now. */
+
+.gap-sm {
+    height: 50px;
+    width: auto;
+}
+.gap-md {
+    height: 100px;
+    width: auto;
+}
+.gap-lg {
+    height: 200px;
+    width: auto;
+}
+
+.gap-footer {
+    height: 10px;
+    width: auto;
+}
+
+    
+/* -------  Layout ------- */ 
+       
+.hero {
+    background-image: url(images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align:center;
+}
+
+.hero h1 {
+	font-size: 80px;
+	color: white;
+	text-shadow: 0 0 10px #000;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+	font-size: 20px;
+	color: white;
+	background: #06192b;
+	display:inline;
+    padding: 3px 10px;
+    border-radius: 8px;
+}
+    
+.bg-accent {
+      background-color: #06192b;  
+    padding: 20px;
+    margin: 20px 0;
+}
